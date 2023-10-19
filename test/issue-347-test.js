@@ -9,8 +9,8 @@ const {
 } = require("./helpers/setup-tests");
 
 const describe = utilPromisifyAvailable
-    ? global.describe.skip
-    : global.describe;
+    ? global.describe
+    : global.describe.skip;
 describe("#347 - Support util.promisify once installed", function () {
     beforeEach(function () {
         this.clock = FakeTimers.install();

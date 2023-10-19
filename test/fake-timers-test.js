@@ -37,7 +37,7 @@ if (typeof require === "function" && typeof module === "object") {
     }
 }
 
-const whenUtilPromisified = utilPromisifyAvailable ? describe.skip : describe;
+const whenUtilPromisified = utilPromisifyAvailable ? describe : describe.skip;
 
 describe("FakeTimers", function () {
     describe("setTimeout", function () {
